@@ -3,6 +3,7 @@
 import React from "react";
 import Highlighter from "react-highlight-words";
 import type { ColorMap } from "src/models";
+import { default as AnsiUp } from 'ansi_up';
 
 type Props = {
   caseSensitive: boolean,
@@ -56,6 +57,9 @@ export function findJSONObjectsInLine(text: string): string[] {
   return chunks;
 }
 
+const ansi_up = new AnsiUp();
+
+
 export default class LogLineText extends React.PureComponent<Props> {
   lineRef: ?HTMLSpanElement = null;
   prettyPrintedText: string[] = findJSONObjectsInLine(this.props.text);
@@ -83,6 +87,9 @@ export default class LogLineText extends React.PureComponent<Props> {
       backgroundImage: "inherit",
       backgroundColor: "pink",
     };
+
+    this.props.text = ansi_up.ansi_to_html(this.props.text);
+
     if (this.props.port != null) {
       style.color = this.props.colorMap[this.props.port];
       highlightStyle.color = this.props.colorMap[this.props.port];
