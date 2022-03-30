@@ -4,7 +4,7 @@ import React from "react";
 import Fetch from ".";
 import type { LogIdentity } from "../../models";
 import type { ContextRouter } from "react-router-dom";
-import queryString from "../../thirdparty/query-string";
+import queryString from "query-string";
 
 function makeLogkeeperLogID(
   build: ?string,

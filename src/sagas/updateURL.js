@@ -1,6 +1,6 @@
 // @flow
 
-import queryString from "../thirdparty/query-string";
+import queryString from "query-string";
 import { select } from "redux-saga/effects";
 import type { Saga } from "redux-saga";
 import * as selectors from "../selectors";

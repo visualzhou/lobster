@@ -17,7 +17,7 @@ import LogkeeperLogViewer from "../Fetch/LogkeeperLogViewer";
 import { Nav, NavItem } from "react-bootstrap";
 import CacheModal from "./CacheModal";
 import LogDrop from "../LogDrop";
-import queryString from "../../thirdparty/query-string";
+import queryString from "query-string";
 
 const logdrop = (props: ContextRouter) => {
   const parsed = queryString.parse(

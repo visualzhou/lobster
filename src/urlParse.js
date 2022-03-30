@@ -1,6 +1,6 @@
 // @flow
 
-import queryString from "./thirdparty/query-string";
+import queryString from "query-string";
 import type { Filter, Highlight } from "./models";
 
 function parseShareLine(shareLine: ?string): number {

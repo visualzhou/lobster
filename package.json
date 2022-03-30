@@ -17,6 +17,7 @@
     "morgan": "^1.9.1",
     "needle": "^2.2.1",
     "prop-types": "^15.6.2",
+    "query-string": "^7.1.1",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
@@ -25,13 +26,14 @@
     "react-redux": "^5.0.7",
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.0",
     "react-toggle-button": "^2.2.0",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
     "rmdir": "^1.2.0",
     "string-hash": "^1.1.3",
+    "strip-ansi": "^7.0.1",
     "url-search-params-polyfill": "^4.0.1",
     "whatwg-fetch": "^2.0.4",
     "yargs": "^12.0.1"
@@ -55,9 +57,9 @@
     "babel-eslint": "^8.2.6",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^5.2.0",
+    "eslint": "^8.1.0",
     "eslint-config-mongodb-js": "^3.0.1",
-    "eslint-config-react-app": "^2.1.0",
+    "eslint-config-react-app": "^7.0.0",
     "eslint-junit": "^1.0.1",
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-dependencies": "^2.4.0",
@@ -97,5 +99,17 @@
         "^/evergreen": "/"
       }
     }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

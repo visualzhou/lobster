@@ -8,7 +8,8 @@ import { connect } from "react-redux";
 import LineNumber from "./LineNumber";
 import * as actions from "../../actions";
 import LogOptions from "./LogOptions";
-import queryString from "../../thirdparty/query-string";
+import queryString from "query-string";
+
 import type {
   ReduxState,
   Line,
